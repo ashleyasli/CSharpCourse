@@ -1,0 +1,7 @@
+C:\Users\ashley.saylik\Documents\My Practice Projects\CSharpCourse\Exceptions\obj\Debug\Exceptions.csprojAssemblyReference.cache
+C:\Users\ashley.saylik\Documents\My Practice Projects\CSharpCourse\Exceptions\obj\Debug\Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\ashley.saylik\Documents\My Practice Projects\CSharpCourse\Exceptions\bin\Debug\Exceptions.exe.config
+C:\Users\ashley.saylik\Documents\My Practice Projects\CSharpCourse\Exceptions\bin\Debug\Exceptions.exe
+C:\Users\ashley.saylik\Documents\My Practice Projects\CSharpCourse\Exceptions\bin\Debug\Exceptions.pdb
+C:\Users\ashley.saylik\Documents\My Practice Projects\CSharpCourse\Exceptions\obj\Debug\Exceptions.exe
+C:\Users\ashley.saylik\Documents\My Practice Projects\CSharpCourse\Exceptions\obj\Debug\Exceptions.pdb
