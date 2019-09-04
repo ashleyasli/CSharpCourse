@@ -10,12 +10,21 @@ namespace AdoNetDemo
 {
     public class ProductDal
     {
-        public List<Product> GetAll()
-        { SqlConnection _connection = new SqlConnection(@"server=(localdb)\mssqllocaldb;initial catalog=ETrade;integrated security=true");
-        if (_connection.State == ConnectionState.Closed)
+        public DataTable GetAll()
+        { SqlConnection connection = new SqlConnection(@"server=(localdb)\mssqllocaldb;initial catalog=ETrade;integrated security=true");
+        if (connection.State == ConnectionState.Closed)
             {
-                _connection.Open();
+                connection.Open();
             }
+            SqlCommand command = new SqlCommand("Select * from Products", connection);
+
+            SqlDataReader reader = command.ExecuteReader();
+
+            DataTable dataTable = new DataTable();
+            dataTable.Load(reader);
+            reader.Close();
+            connection.Close();
+            return dataTable;
         }        
     }        
 }

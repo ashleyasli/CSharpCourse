@@ -16,5 +16,17 @@ namespace AdoNetDemo
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            ProductDal productDal = new ProductDal();
+
+            dgwProducts.DataSource = productDal.GetAll();
+        }
+
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
