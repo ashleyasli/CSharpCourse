@@ -13,7 +13,7 @@ namespace AdoNetDemo
         SqlConnection _connection = new SqlConnection(@"server=(localdb)\mssqllocaldb;initial catalog=ETrade;integrated security=true");
         public List<Product> GetAll()
         {
-            NewMethod();
+            ConnectionControl();
             SqlCommand command = new SqlCommand("Select * from Products", _connection);
 
             SqlDataReader reader = command.ExecuteReader();
@@ -35,19 +35,11 @@ namespace AdoNetDemo
             reader.Close();
             _connection.Close();
             return products;
-        }
-
-        private void NewMethod()
-        {
-            if (_connection.State == ConnectionState.Closed)
-            {
-                _connection.Open();
-            }
-        }
+        }      
 
         public DataTable GetAll2()
         {
-            ConnectionControl();
+            
             SqlCommand command = new SqlCommand("Select * from Products", _connection);
 
             SqlDataReader reader = command.ExecuteReader();
