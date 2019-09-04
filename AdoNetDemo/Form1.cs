@@ -28,5 +28,20 @@ namespace AdoNetDemo
         {
 
         }
+
+        private void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LblName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
