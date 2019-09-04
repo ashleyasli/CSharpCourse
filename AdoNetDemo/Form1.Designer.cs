@@ -76,6 +76,7 @@
             this.unitPrice.Size = new System.Drawing.Size(53, 13);
             this.unitPrice.TabIndex = 3;
             this.unitPrice.Text = "Unit Price";
+            this.unitPrice.Click += new System.EventHandler(this.UnitPrice_Click);
             // 
             // tbxUnitPrice
             // 
@@ -93,6 +94,7 @@
             this.lblStockAmount.Size = new System.Drawing.Size(74, 13);
             this.lblStockAmount.TabIndex = 5;
             this.lblStockAmount.Text = "Stock Amount";
+            this.lblStockAmount.Click += new System.EventHandler(this.LblStockAmount_Click);
             // 
             // tbxStockAmount
             // 
@@ -100,6 +102,7 @@
             this.tbxStockAmount.Name = "tbxStockAmount";
             this.tbxStockAmount.Size = new System.Drawing.Size(148, 20);
             this.tbxStockAmount.TabIndex = 6;
+            this.tbxStockAmount.TextChanged += new System.EventHandler(this.TbxStockAmount_TextChanged);
             // 
             // gbxAdd
             // 
@@ -125,6 +128,7 @@
             this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // Form1
             // 
