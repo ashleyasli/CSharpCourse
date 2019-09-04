@@ -31,7 +31,7 @@ namespace AdoNetDemo
                
         private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+            
         }
 
         private void TextBox2_TextChanged(object sender, EventArgs e)
@@ -66,14 +66,53 @@ namespace AdoNetDemo
             MessageBox.Show("Product added!");
         }
 
-        private void TbxStockAmount_TextChanged(object sender, EventArgs e)
+        /*private void TbxStockAmount_TextChanged(object sender, EventArgs e)
         {
 
-        }
+        }*/
 
         private void UnitPrice_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void GroupBox1_Enter_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DgwProducts_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            tbxNameUpdate.Text = dgwProducts.CurrentRow.Cells[1].Value.ToString();
+            tbxUnitPriceUpdate.Text = dgwProducts.CurrentRow.Cells[2].Value.ToString();
+            tbxStockAmountUpdate.Text = dgwProducts.CurrentRow.Cells[3].Value.ToString();
+        }
+
+        private void BtnUpdate_Click(object sender, EventArgs e)
+        {
+            Product product = new Product
+            {
+                Id = Convert.ToInt32(dgwProducts.CurrentRow.Cells[0].Value),
+                Name = tbxNameUpdate.Text,
+                UnitPrice = Convert.ToDecimal(tbxUnitPriceUpdate.Text),
+                StockAmount = Convert.ToInt32(tbxStockAmountUpdate.Text)
+            };
+            _productDal.Update(product);
+            LoadProducts();
+            MessageBox.Show("Updated!");
+        }
+
+        private void TbxStockAmountUpdate_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnRemove_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(dgwProducts.CurrentRow.Cells[0].Value);
+            _productDal.Delete(id);
+            LoadProducts();
+            MessageBox.Show("Deleted!");
         }
     }
 }
