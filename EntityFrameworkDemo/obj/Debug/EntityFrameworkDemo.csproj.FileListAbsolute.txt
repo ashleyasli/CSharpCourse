@@ -1,0 +1,13 @@
+C:\Users\ashley.saylik\Documents\My Practice Projects\CSharpCourse\EntityFrameworkDemo\bin\Debug\EntityFrameworkDemo.exe.config
+C:\Users\ashley.saylik\Documents\My Practice Projects\CSharpCourse\EntityFrameworkDemo\bin\Debug\EntityFrameworkDemo.exe
+C:\Users\ashley.saylik\Documents\My Practice Projects\CSharpCourse\EntityFrameworkDemo\bin\Debug\EntityFrameworkDemo.pdb
+C:\Users\ashley.saylik\Documents\My Practice Projects\CSharpCourse\EntityFrameworkDemo\obj\Debug\EntityFrameworkDemo.Form1.resources
+C:\Users\ashley.saylik\Documents\My Practice Projects\CSharpCourse\EntityFrameworkDemo\obj\Debug\EntityFrameworkDemo.Properties.Resources.resources
+C:\Users\ashley.saylik\Documents\My Practice Projects\CSharpCourse\EntityFrameworkDemo\obj\Debug\EntityFrameworkDemo.csproj.GenerateResource.cache
+C:\Users\ashley.saylik\Documents\My Practice Projects\CSharpCourse\EntityFrameworkDemo\obj\Debug\EntityFrameworkDemo.csproj.CoreCompileInputs.cache
+C:\Users\ashley.saylik\Documents\My Practice Projects\CSharpCourse\EntityFrameworkDemo\obj\Debug\EntityFrameworkDemo.exe
+C:\Users\ashley.saylik\Documents\My Practice Projects\CSharpCourse\EntityFrameworkDemo\obj\Debug\EntityFrameworkDemo.pdb
+C:\Users\ashley.saylik\Documents\My Practice Projects\CSharpCourse\EntityFrameworkDemo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ashley.saylik\Documents\My Practice Projects\CSharpCourse\EntityFrameworkDemo\bin\Debug\EntityFramework.dll
+C:\Users\ashley.saylik\Documents\My Practice Projects\CSharpCourse\EntityFrameworkDemo\obj\Debug\EntityFrameworkDemo.csprojAssemblyReference.cache
+C:\Users\ashley.saylik\Documents\My Practice Projects\CSharpCourse\EntityFrameworkDemo\obj\Debug\EntityFrameworkDemo.csproj.CopyComplete

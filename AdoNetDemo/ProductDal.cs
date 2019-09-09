@@ -63,10 +63,10 @@ namespace AdoNetDemo
         {
             ConnectionControl();
             SqlCommand command = new SqlCommand(
-                "Insert into Products values(@name,@unitPrice,@stockAmount)", _connection);
+                "Insert into Products values(@name,@unitPrice)", _connection); //@stockAmount
             command.Parameters.AddWithValue("@name", product.Name);
             command.Parameters.AddWithValue("@unitPrice", product.UnitPrice);
-            command.Parameters.AddWithValue("@stockAmount", product.StockAmount);
+            //command.Parameters.AddWithValue("@stockAmount", product.StockAmount);
             command.ExecuteNonQuery();
 
             _connection.Close();
@@ -77,10 +77,10 @@ namespace AdoNetDemo
         {
             ConnectionControl();
             SqlCommand command = new SqlCommand(
-                "Update Products set Name=@name, UnitPrice=@unitPrice, StockAmount=@stockAmount where Id=@id", _connection);
+                @"Update Products set Name=@name, UnitPrice=@unitPrice,  where Id=@id", _connection);//StockAmount=@stockAmount
             command.Parameters.AddWithValue("@name", product.Name);
             command.Parameters.AddWithValue("@unitPrice", product.UnitPrice);
-            command.Parameters.AddWithValue("@stockAmount", product.StockAmount);
+            //command.Parameters.AddWithValue("@stockAmount", product.StockAmount);
             command.Parameters.AddWithValue("@id", product.Id);
             //command.ExecuteNonQuery();
 

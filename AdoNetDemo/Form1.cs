@@ -49,11 +49,11 @@ namespace AdoNetDemo
 
         }
 
-        private void LblStockAmount_Click(object sender, EventArgs e)
+      /*  private void LblStockAmount_Click(object sender, EventArgs e)
         {
 
         }
-
+*/
         private void BtnAdd_Click(object sender, EventArgs e)
         {
             _productDal.Add(new Product
@@ -85,7 +85,7 @@ namespace AdoNetDemo
         {
             tbxNameUpdate.Text = dgwProducts.CurrentRow.Cells[1].Value.ToString();
             tbxUnitPriceUpdate.Text = dgwProducts.CurrentRow.Cells[2].Value.ToString();
-            tbxStockAmountUpdate.Text = dgwProducts.CurrentRow.Cells[3].Value.ToString();
+           // tbxStockAmountUpdate.Text = dgwProducts.CurrentRow.Cells[3].Value.ToString();
         }
 
         private void BtnUpdate_Click(object sender, EventArgs e)
@@ -95,17 +95,17 @@ namespace AdoNetDemo
                 Id = Convert.ToInt32(dgwProducts.CurrentRow.Cells[0].Value),
                 Name = tbxNameUpdate.Text,
                 UnitPrice = Convert.ToDecimal(tbxUnitPriceUpdate.Text),
-                StockAmount = Convert.ToInt32(tbxStockAmountUpdate.Text)
+               // StockAmount = Convert.ToInt32(tbxStockAmountUpdate.Text)
             };
             _productDal.Update(product);
             LoadProducts();
             MessageBox.Show("Updated!");
         }
 
-        private void TbxStockAmountUpdate_TextChanged(object sender, EventArgs e)
+       /* private void TbxStockAmountUpdate_TextChanged(object sender, EventArgs e)
         {
 
-        }
+        }*/
 
         private void BtnRemove_Click(object sender, EventArgs e)
         {
