@@ -58,5 +58,10 @@ namespace EntityFrameworkDemo
         {
 
         }
+
+        private void TbxGetById_Click(object sender, EventArgs e)
+        {
+            _productDal.GetById(2);
+        }
     }
 }

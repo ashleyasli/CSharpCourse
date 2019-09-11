@@ -59,6 +59,7 @@
             this.tbxGetById.TabIndex = 23;
             this.tbxGetById.Text = "Get By Id";
             this.tbxGetById.UseVisualStyleBackColor = true;
+            this.tbxGetById.Click += new System.EventHandler(this.TbxGetById_Click);
             // 
             // lblSearch
             // 
