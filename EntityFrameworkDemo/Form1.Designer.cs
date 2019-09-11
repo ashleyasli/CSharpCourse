@@ -35,17 +35,13 @@
             this.gbxUpdate = new System.Windows.Forms.GroupBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.tbxUnitPriceUpdate = new System.Windows.Forms.TextBox();
-           // this.tbxStockAmountUpdate = new System.Windows.Forms.TextBox();
             this.lblNameUpdate = new System.Windows.Forms.Label();
-           // this.lblStockAmountUpdate = new System.Windows.Forms.Label();
             this.tbxNameUpdate = new System.Windows.Forms.TextBox();
             this.lblUnitPriceUpdate = new System.Windows.Forms.Label();
             this.gbxAdd = new System.Windows.Forms.GroupBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.tbxUnitPrice = new System.Windows.Forms.TextBox();
-           // this.tbxStockAmount = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
-           // this.lblStockAmount = new System.Windows.Forms.Label();
             this.tbxName = new System.Windows.Forms.TextBox();
             this.unitPrice = new System.Windows.Forms.Label();
             this.dgwProducts = new System.Windows.Forms.DataGridView();
@@ -73,6 +69,7 @@
             this.lblSearch.Size = new System.Drawing.Size(41, 13);
             this.lblSearch.TabIndex = 22;
             this.lblSearch.Text = "Search";
+            this.lblSearch.Click += new System.EventHandler(this.LblSearch_Click);
             // 
             // tbxSearch
             // 
@@ -81,6 +78,7 @@
             this.tbxSearch.Name = "tbxSearch";
             this.tbxSearch.Size = new System.Drawing.Size(103, 20);
             this.tbxSearch.TabIndex = 21;
+            this.tbxSearch.TextChanged += new System.EventHandler(this.TbxSearch_TextChanged);
             // 
             // btnRemove
             // 
@@ -96,9 +94,7 @@
             // 
             this.gbxUpdate.Controls.Add(this.btnUpdate);
             this.gbxUpdate.Controls.Add(this.tbxUnitPriceUpdate);
-           // this.gbxUpdate.Controls.Add(this.tbxStockAmountUpdate);
             this.gbxUpdate.Controls.Add(this.lblNameUpdate);
-            //this.gbxUpdate.Controls.Add(this.lblStockAmountUpdate);
             this.gbxUpdate.Controls.Add(this.tbxNameUpdate);
             this.gbxUpdate.Controls.Add(this.lblUnitPriceUpdate);
             this.gbxUpdate.Font = new System.Drawing.Font("Tahoma", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -129,14 +125,6 @@
             this.tbxUnitPriceUpdate.Size = new System.Drawing.Size(103, 21);
             this.tbxUnitPriceUpdate.TabIndex = 4;
             // 
-            // tbxStockAmountUpdate
-            // 
-            /*this.tbxStockAmountUpdate.Location = new System.Drawing.Point(122, 95);
-            this.tbxStockAmountUpdate.Margin = new System.Windows.Forms.Padding(1);
-            this.tbxStockAmountUpdate.Name = "tbxStockAmountUpdate";
-            this.tbxStockAmountUpdate.Size = new System.Drawing.Size(103, 21);
-            this.tbxStockAmountUpdate.TabIndex = 6;*/
-            // 
             // lblNameUpdate
             // 
             this.lblNameUpdate.AutoSize = true;
@@ -146,16 +134,6 @@
             this.lblNameUpdate.Size = new System.Drawing.Size(34, 13);
             this.lblNameUpdate.TabIndex = 1;
             this.lblNameUpdate.Text = "Name";
-            // 
-            // lblStockAmountUpdate
-            // 
-            /*this.lblStockAmountUpdate.AutoSize = true;
-            this.lblStockAmountUpdate.Location = new System.Drawing.Point(36, 97);
-            this.lblStockAmountUpdate.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblStockAmountUpdate.Name = "lblStockAmountUpdate";
-            this.lblStockAmountUpdate.Size = new System.Drawing.Size(73, 13);
-            this.lblStockAmountUpdate.TabIndex = 5;
-            this.lblStockAmountUpdate.Text = "Stock Amount";*/
             // 
             // tbxNameUpdate
             // 
@@ -179,9 +157,7 @@
             // 
             this.gbxAdd.Controls.Add(this.btnAdd);
             this.gbxAdd.Controls.Add(this.tbxUnitPrice);
-           // this.gbxAdd.Controls.Add(this.tbxStockAmount);
             this.gbxAdd.Controls.Add(this.lblName);
-           // this.gbxAdd.Controls.Add(this.lblStockAmount);
             this.gbxAdd.Controls.Add(this.tbxName);
             this.gbxAdd.Controls.Add(this.unitPrice);
             this.gbxAdd.Font = new System.Drawing.Font("Tahoma", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -212,14 +188,6 @@
             this.tbxUnitPrice.Size = new System.Drawing.Size(103, 21);
             this.tbxUnitPrice.TabIndex = 4;
             // 
-            // tbxStockAmount
-            // 
-            /*this.tbxStockAmount.Location = new System.Drawing.Point(122, 97);
-            this.tbxStockAmount.Margin = new System.Windows.Forms.Padding(1);
-            this.tbxStockAmount.Name = "tbxStockAmount";
-            this.tbxStockAmount.Size = new System.Drawing.Size(103, 21);
-            this.tbxStockAmount.TabIndex = 6;*/
-            // 
             // lblName
             // 
             this.lblName.AutoSize = true;
@@ -229,16 +197,6 @@
             this.lblName.Size = new System.Drawing.Size(34, 13);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Name";
-            // 
-            // lblStockAmount
-            // 
-           /* this.lblStockAmount.AutoSize = true;
-            this.lblStockAmount.Location = new System.Drawing.Point(36, 99);
-            this.lblStockAmount.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblStockAmount.Name = "lblStockAmount";
-            this.lblStockAmount.Size = new System.Drawing.Size(73, 13);
-            this.lblStockAmount.TabIndex = 5;
-            this.lblStockAmount.Text = "Stock Amount";*/
             // 
             // tbxName
             // 
